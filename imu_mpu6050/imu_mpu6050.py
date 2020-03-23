@@ -36,7 +36,7 @@
 
 * Author (s): Romy Bompart
 """
-__version__ = "0.0.0-auto.1"
+__version__ = "v0.0"
 __repo__ = "git@github.com:romybompart/py_imu_mpu6050.git"
 
 

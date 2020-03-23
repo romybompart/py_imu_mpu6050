@@ -25,7 +25,7 @@ setuptools.setup(
     long_description_content_type="text/x-rst",
     # The project's main homepage.
     url="https://github.com/romybompart/py_imu_mpu6050",
-    download_url = "https://github.com/romybompart/py_imu_mpu6050/archive/0.0.0-auto.0.tar.gz"
+    download_url = "https://github.com/romybompart/py_imu_mpu6050/archive/0.0.0-auto.0.tar.gz",
     # Author details
     author="Romy Bompart",
     author_email="romybompart@gmail.com",

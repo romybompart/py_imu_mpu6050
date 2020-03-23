@@ -58,28 +58,28 @@ class MPU6050:
 
 	#Registers:
 	#General Registers
-	PWR_MGMT_1 	= UnaryStruct(0x6B, "<B") 	# 0x6B
-	WHO_AM_I	= ROUnaryStruct(0x75, "<B")	# 0X75
-	FSYC_DLP_CONFIG = UnaryStruct(0x1A,"<B")
+	PWR_MGMT_1 	= UnaryStruct(0x6B, ">B") 	# 0x6B
+	WHO_AM_I	= ROUnaryStruct(0x75, ">B")	# 0X75
+	FSYC_DLP_CONFIG = UnaryStruct(0x1A,">B")
 	#Temp Sensor Registers
-	TEMP_OUTH 	= ROUnaryStruct(0x41, "<b")	# 0x41
-	TEMP_OUTL 	= ROUnaryStruct(0x42, "<b")	# 0x41
+	TEMP_OUTH 	= ROUnaryStruct(0x41, ">b")	# 0x41
+	TEMP_OUTL 	= ROUnaryStruct(0x42, ">b")	# 0x41
 	#Accelerometer Registers
-	ACCEL_CONFIG = UnaryStruct(0x1C, "<B")	# 0x1C
-	ACCEL_XOUTH = ROUnaryStruct(0x3B, "<B") # 0x3B
-	ACCEL_XOUTL = ROUnaryStruct(0x3C, "<B") # 0x3B   
-	ACCEL_YOUTH = ROUnaryStruct(0x3D, "<B")	# 0x3D
-	ACCEL_YOUTL = ROUnaryStruct(0x3E, "<B")	# 0x3D
-	ACCEL_ZOUTH = ROUnaryStruct(0x3F, "<B")	# 0x3F
-	ACCEL_ZOUTL = ROUnaryStruct(0x40, "<B")	# 0x3F
+	ACCEL_CONFIG = UnaryStruct(0x1C, ">B")	# 0x1C
+	ACCEL_XOUTH = ROUnaryStruct(0x3B, ">B") # 0x3B
+	ACCEL_XOUTL = ROUnaryStruct(0x3C, ">B") # 0x3B   
+	ACCEL_YOUTH = ROUnaryStruct(0x3D, ">B")	# 0x3D
+	ACCEL_YOUTL = ROUnaryStruct(0x3E, ">B")	# 0x3D
+	ACCEL_ZOUTH = ROUnaryStruct(0x3F, ">B")	# 0x3F
+	ACCEL_ZOUTL = ROUnaryStruct(0x40, ">B")	# 0x3F
 	#Gyroscope Registers
-	GYRO_CONFIG = UnaryStruct(0x1B, "<B")	# 0x1B
-	GYRO_XOUTH = ROUnaryStruct(0x43, "<B") 	# 0x43
-	GYRO_XOUTL = ROUnaryStruct(0x44, "<B") 	# 0x44   
-	GYRO_YOUTH = ROUnaryStruct(0x45, "<B")	# 0x45
-	GYRO_YOUTL = ROUnaryStruct(0x46, "<B")	# 0x46
-	GYRO_ZOUTH = ROUnaryStruct(0x47, "<B")	# 0x47
-	GYRO_ZOUTL = ROUnaryStruct(0x48, "<B")	# 0x48
+	GYRO_CONFIG = UnaryStruct(0x1B, ">B")	# 0x1B
+	GYRO_XOUTH = ROUnaryStruct(0x43, ">B") 	# 0x43
+	GYRO_XOUTL = ROUnaryStruct(0x44, ">B") 	# 0x44   
+	GYRO_YOUTH = ROUnaryStruct(0x45, ">B")	# 0x45
+	GYRO_YOUTL = ROUnaryStruct(0x46, ">B")	# 0x46
+	GYRO_ZOUTH = ROUnaryStruct(0x47, ">B")	# 0x47
+	GYRO_ZOUTL = ROUnaryStruct(0x48, ">B")	# 0x48
 
 	#Full scale Range ACCEL:
 	""" from register 1C bit 4 to 3"""

@@ -51,5 +51,5 @@ setuptools.setup(
     keywords="IMU MPU6050 i2c hardware python jetsonnano raspberrypi adafruit",
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    py_modules=["imu_mpu6050"],
+    packages=["imu_mpu6050"],
 )

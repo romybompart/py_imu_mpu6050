@@ -13,7 +13,7 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, "README.rst"), encoding="utf-8") as f:
+with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setuptools.setup(
@@ -22,7 +22,7 @@ setuptools.setup(
     setup_requires=["setuptools_scm"],
     description=" Inertial Measurement Unit (IMU) Driver based on on the MPU6050",
     long_description=long_description,
-    long_description_content_type="text/x-rst",
+    long_description_content_type="text/markdown",
     # The project's main homepage.
     url="https://github.com/romybompart/py_imu_mpu6050",
     # Author details

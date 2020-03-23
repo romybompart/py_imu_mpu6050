@@ -82,8 +82,8 @@ pip3 install py-imu-mpu6050
 # Usage Examples
 
 See:
-⋅⋅* [examples/MPU6050_SimpleRead_test.py](../examples/MPU6050_SimpleRead_test.py) for a simple read demo.
-⋅⋅* [examples/MPU6050_CSV_IMU_test.py](../examples/MPU6050_CSV_IMU_test.py) for a writing IMU data into a csv file.
+⋅⋅* [examples/MPU6050_SimpleRead_test.py](/examples/MPU6050_SimpleRead_test.py) for a simple read demo.
+⋅⋅* [examples/MPU6050_CSV_IMU_test.py](/examples/MPU6050_CSV_IMU_test.py) for a writing IMU data into a csv file.
 
 # Contributing
 
